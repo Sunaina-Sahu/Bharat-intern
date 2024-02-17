@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <div class="container">
+    <div class="city">
+          <div class="enter-city">
+            <input type="text" id="cityName" placeholder="Enter city name here"/> 
+            <i class="fa-solid fa-magnifying-glass" id="getWeather"></i>
+          </div>
+          <div class="input-city">
+            <h3 id="name"></h3>
+        </div>
+    </div>
+   <div class="location_not_found">
+    <h3>Sorry Wrong Place Entered</h3>
+     <img src="images/404.png">
+   </div>
+    <div class="weather-info">
+     <div class="temp-desc">
+      <div class="temperature-info">
+         <p id="temperature">Temperature °C</p>
+         <p id="description"></p>
+      </div>
+         <div class="images">
+          <img src="" class="weather-image">
+         </div>
+      </div>
+      <div class="min-max">
+        <p id="temp_max">Max temp</p>
+        <p>/</p>
+        <p id="temp_min">Min Temp </p>
+        <p > Feels like <span id="feels_like"></span></p>
+      </div>
+  
+       <div class="other-info">
+        <div class="wind-info">
+          <i class="fa-solid fa-wind"></i>
+         <p >Wind </p> 
+         <span id="wind"></span>
+        </div>
+
+         <div class="humidity-info">
+          <i class="fa-solid fa-droplet"></i>
+          <p >Humidity</p>
+          <span id="humidity"></span>
+         </div>
+         <div class="pressure-info">
+          <i class="fa-solid fa-arrow-down-up-across-line"></i>
+          <p >Pressure</p>
+           <span id="pressure"></span>
+         </div>
+       </div>
+       
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/4741d4e356.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
